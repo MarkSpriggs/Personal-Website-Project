@@ -6,38 +6,44 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <div id="logo">
-            <h1>mark spriggs</h1>
+            <h1>Mark Spriggs</h1>
         </div>
             
         <div id="links">
             <a class="button" href="index.html">Home</a>
-            <a class="button" href="about.html">About</a>
+            <a class="button" id="selectedButton" href="about.html">About</a>
             <a class="button" href="portfolio.html">Portfolio</a>
+            <a class="button" href="contact.html">Contact</a>
         </div>
     </nav>
     <main>
         <section>
             <h2 id="aboutHeader">Personal Interests</h2>
         </section>
-        <section class="aboutSections">
-            <h3>YoungLife</h3>
-            <img src="images/YL.jpg" alt="">
-            <p class="segments">For four years, I have been a volunteer leader with YoungLife, a christian outreach ministry.<br> In my time there, I have enjoyed mentoring and walking with highschool students as they celebrate<br> achievements, as well as lifting them up when experiencing hardships in life.</P>
-        </section>
-        <section class="aboutSections">
-            <h3>Exercise</h3>
-            <img src="images/basketball.jpg" alt="">
-            <P class="segments">Most days of the week I find time to get a couple hours in at the gym. Whether lifting weights or <br>playing pickup basketball, I love spending time with my firends and getting in some exercise.</P>
-        </section>
-        <section class="aboutSections">
-            <h3>Sports</h3>
-            <img src="images/Sports.jpg" alt="">
-            <P class="segments">When im not working or going to the gym, I spend time watching my favorite sports. Football is my <br>number one choice. When football isn't on, watching the Nuggets or Avalanche play is an excellent passtime.</P>
-        </section>
+        <div class="aboutMain">
+            <section class="aboutSections">
+                <h3>YoungLife</h3>
+                <img src="images/YL.jpg" alt="">
+                <p class="segments">For four years, I have been a volunteer leader with YoungLife, a christian outreach ministry.<br> In my time there, I have enjoyed mentoring and walking with highschool students as they celebrate<br> achievements, as well as lifting them up when experiencing hardships in life.</P>
+            </section>
+            <section class="aboutSections">
+                <h3>Exercise</h3>
+                <img src="images/basketball.jpg" alt="">
+                <P class="segments">Most days of the week I find time to get a couple hours in at the gym. Whether lifting weights or <br>playing pickup basketball, I love spending time with my friends and getting in some exercise.</P>
+            </section>
+            <section class="aboutSections">
+                <h3>Sports</h3>
+                <img src="images/Sports.jpg" alt="">
+                <P class="segments">When im not working or going to the gym, I spend time watching my favorite sports. Football is my <br>number one choice. When football isn't on, watching the Nuggets or Avalanche play is an excellent passtime.</P>
+            </section>
+        </div>
     </main>
 </body>
 </html>

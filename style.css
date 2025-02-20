@@ -1,5 +1,7 @@
 html{
-    background-color: #e0e0e0;
+    
+    background-color: #eeeeee;
+    
 }
 
 body{
@@ -21,44 +23,47 @@ nav{
     left: 0;
     right: 0;
     align-items: center;
-    background-color: rgb(3, 32, 5);
+    background-color: rgb(0, 0, 0);
     box-shadow: 0 0 20px -2px; color: rgb(0, 0, 0);
+    height: 12vh;
 }
 
 h1{
-    font-family:monospace;
-    text-transform: uppercase;
+    font-family: monospace;
     color: #e0e0e0;
     font-weight:bold;
-    font-size: 40px
+    font-size: 7vh;
+    font-family: "Press Start 2P", serif;
 
     
 }
 a{
-    color: black;
-    font-family: monospace;
+    color: rgb(0, 0, 0);
+    font-family: "Press Start 2P", serif;
     font-size: 20px;
     background-color: #e0e0e0;
     border-radius: 5px;
     text-decoration: none;
-    padding: 3px;
+    padding: 10px;
     margin: 5px;
     text-transform:uppercase;
 }
+#selectedButton{
+    background-color: rgb(96, 255, 157);
+}
 .button:hover{
     padding: 7px;
-    
 }
 
 main{
     display: block;
-    padding:110px 30px 10px 30px;
+    padding: 15vh 5vw 20vh 5vw
 }
 
+
 #homeDiv{
-    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    align-content: space-around;
 }
 header{
     display: block;
@@ -66,27 +71,30 @@ header{
     margin-top: 50px;
 }
 h2{
-    font-size: 60px;
-    border-bottom: solid;
+    font-size: 7vh;
+    padding-bottom: 1vh;
+    border-bottom: solid rgb(96, 255, 157) 2vh;
+    font-family: "Press Start 2P", serif;
+    margin-right: 5vw;
 }
 
 h3{
     font-size: 40px;
+    font-family: "Press Start 2P", serif;
+    margin-left: 1vw;
     
 }
 
 p{
-    font-size: 20px;
+    font-size: 2vh;
+    font-family: monospace;
 }
 #quote{
     font-size: 40px;
-    font-family:cursive
+    font-family: monospace
 }
 #homePicture{
-    width: 30%;
-    margin-left: auto;
-    
-    border: 10px solid black;
+    height: 900px;
     border-radius: 55px;
 }
 
@@ -100,3 +108,120 @@ p{
     color: #000000;
 }
 
+.Projects{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: (1,1fr);
+    gap: 20px;
+    
+}
+
+.projectBits{
+    background-color: rgb(96, 255, 157);
+    border-radius: 10px;
+    display: block;
+}
+
+.segments{
+    margin-left: 1vw;
+}
+
+.aboutMain{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 2vw;
+    
+}
+.aboutSections{
+    background-color: rgb(96, 255, 157);
+}
+img{
+    display: block;
+    margin-left: 4vw;
+    border: solid 2vw #eeeeee;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    border: rgb(96, 255, 157);
+    border-width: 3vw;
+    background-color: rgb(96, 255, 157);
+}
+
+input{
+    background-color:#eeeeee;
+    width: 20vw;
+    border-radius: 1vw;
+    margin-left: 2vw;
+    border: solid;
+    
+}
+label{
+    font-size: 2vh;
+    font-family: monospace;
+    margin-left: 2vw;
+}
+
+textarea{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    background-color: #eeeeee;
+    border: solid #000000;
+}
+
+#submitButton{
+    display: block;
+    align-items: center;
+    background-color: #eeeeee;
+}
+
+input[type=submit] {
+    margin-top: 10%;
+    margin-left: 35%;
+    margin-right: 50%;
+    font-family: "Press Start 2P", serif;
+    align-content: center;
+    width: 9vw;
+    height: 3vw;
+    font-size: 2vh;
+    text-transform: uppercase;
+    padding: 1vw
+
+}
+
+input[type=submit]:hover{
+    margin-top: 10%;
+    margin-left: 35%;
+    margin-right: 50%;
+    font-family: "Press Start 2P", serif;
+    align-content: center;
+    width: 8.75vw;
+    height: 2.8vw;
+    font-size: 2vh;
+    text-transform: uppercase;
+    padding: 1vw;
+    background-color: rgb(96, 255, 157)
+    
+
+}
+    @media(max-width: 800px){
+
+    .Projects{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: (3,1fr);
+        gap: 20px;
+    }
+
+    .aboutMain{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 2vw;
+        
+    }
+
+
+}
