@@ -1,7 +1,7 @@
 # Personal-Website-Project
 
 This website will be a resource to show a little about myself personally as well as access to various prjects I have worked on using three seperate webpages
-//////////////////////////////////////////////////////////////////////////////////
+
 the nav bar at the top will be consistant and display my name as well as buttons to move between the pages
 /
 index.html contains the home page which provides a photo of myself as well as a quote i like
